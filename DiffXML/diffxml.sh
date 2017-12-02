@@ -9,4 +9,4 @@ if [[ -n "${callPath}" ]]; then
   callPath=${callPath}/
 fi
 
-java -cp ${callPath}lib/xpp3-1.1.3.4.C:${callPath}build:${callPath}lib/diffxml.jar org.diffxml.diffxml.DiffXML "$@"
+java -cp ${callPath}build:${callPath}lib/diffxml.jar org.diffxml.diffxml.DiffXML "$@"
